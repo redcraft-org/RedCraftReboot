@@ -1,0 +1,11 @@
+#  ___        _  ___           __ _
+# | _ \___ __| |/ __|_ _ __ _ / _| |_   ___ _ _ __ _
+# |   / -_) _` | (__| '_/ _` |  _|  _|_/ _ \ '_/ _` |
+# |_|_\___\__,_|\___|_| \__,_|_|  \__(_)___/_| \__, |
+#                                              |___/
+#
+
+reboot-message: "%player% asked for a reboot in %minutes% minutes for the following reason: %reason%"
+
+console-scheduled-minutes: 15
+console-message: "The daily reboot has been scheduled in %minutes% minutes"
