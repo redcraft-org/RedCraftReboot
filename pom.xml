@@ -15,6 +15,15 @@
 		</repository>
 	</repositories>
 
+	<profiles>
+	<profile>
+		<id>dir</id>
+		<build>
+			<directory>../../plugins</directory>
+		</build>
+	</profile>
+	</profiles>
+
 	<build>
 		<plugins>
 			<plugin>

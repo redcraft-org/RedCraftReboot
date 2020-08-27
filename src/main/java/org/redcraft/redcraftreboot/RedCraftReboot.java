@@ -1,6 +1,4 @@
 package org.redcraft.redcraftreboot;
-
-
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class RedCraftReboot extends JavaPlugin {
@@ -16,13 +14,13 @@ public class RedCraftReboot extends JavaPlugin {
 
 		reboot = new Reboot(this);
 		this.getCommand("reboot").setExecutor(reboot); 
-		System.out.println("RedCraftReboot has been loaded!");
+		
 
 	}
 
 	@Override
 	public void onDisable() {
-		System.out.println("RedCraftReboot has been unloaded");
+		
 	}
 
 }
