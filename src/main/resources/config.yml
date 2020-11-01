@@ -5,14 +5,16 @@
 #                                              |___/
 #
 
-reboot-message: "%player% asked for a reboot in %minutes% minutes for the following reason: %reason%"
-reboot-message-s: "%player% asked for a reboot in %seconds% seconds for the following reason: %reason%"
-console-scheduled-minutes: 15
+reboot-minute-message: "%player% asked for a reboot in %minutes% minutes for the following reason: %reason%"
+reboot-second-message: "%player% asked for a reboot in %seconds% seconds for the following reason: %reason%"
 
-kick-message: "The server is restarting"
-default-reason: "None"
-minute-countdown: "The server is restarting in %minutes% minutes"
-second-countdown: "The server is restarting in %seconds% seconds"
+maxCooldown-minutes: 15
 
-cancel-message: "Server reboot has been canceled"
-console-message: "The daily reboot has been scheduled in %minutes% minutes"
+reboot-kick-message: "The server is restarting"
+reboot-default-message: "None"
+
+countdown-minute-message: "The server is restarting in %minutes% minutes"
+countdown-second-message: "The server is restarting in %seconds% seconds"
+
+reboot-cancel-message: "Server reboot has been canceled"
+reboot-console-message: "The daily reboot has been scheduled in %minutes% minutes"

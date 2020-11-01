@@ -1,6 +1,6 @@
 name: RedCraftReboot
 main: org.redcraft.redcraftreboot.RedCraftReboot
-version: 0.0.1-SNAPSHOT
+version: 0.0.2-SNAPSHOT
 author: RedCraft
 authors: [Omeganx, lululombard]
 commands:

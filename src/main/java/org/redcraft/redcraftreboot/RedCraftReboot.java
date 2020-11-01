@@ -13,9 +13,7 @@ public class RedCraftReboot extends JavaPlugin {
 		Config.readConfig(this);
 
 		reboot = new Reboot(this);
-		this.getCommand("reboot").setExecutor(reboot); 
-		
-
+		this.getCommand("reboot").setExecutor(reboot);
 	}
 
 	@Override

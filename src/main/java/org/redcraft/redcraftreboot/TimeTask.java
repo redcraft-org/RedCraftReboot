@@ -45,7 +45,7 @@ public class TimeTask extends BukkitRunnable {
             //10s couter
             if(this.remaining_seconds < 10)
             {
-                String message = Config.sCountdown.replace("%seconds%", String.valueOf(this.remaining_seconds));
+                String message = Config.countdownSecond.replace("%seconds%", String.valueOf(this.remaining_seconds));
                 Bukkit.broadcastMessage(message);
 
                 for(Player player : Bukkit.getServer().getOnlinePlayers())
@@ -61,7 +61,7 @@ public class TimeTask extends BukkitRunnable {
                 {
                     if (this.remaining_seconds / 60 == i)
                     {
-                        String message = Config.mCountdown.replace("%minutes%", String.valueOf(i));
+                        String message = Config.countdownMinute.replace("%minutes%", String.valueOf(i));
                         Bukkit.broadcastMessage(message);
                     }
                 }
