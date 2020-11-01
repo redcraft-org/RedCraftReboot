@@ -1,43 +1,51 @@
 package org.redcraft.redcraftreboot;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 
 public class Config {
-    static public String rebootMinuteMessage;
-    static public String rebootSecondMessage ;
+    static public String rebootMessageMinutes = "%sender% asked for a reboot in %minutes% minutes for the following reason: %reason%";
+    static public String rebootMessageSeconds = "%sender% asked for a reboot in %seconds% seconds for the following reason: %reason%";
 
-    static public String defaultRebootMessage;
-    static public String rebootConsoleMessage;
-    
-    static public String countdownMinute;
-    static public String countdownSecond;    
-    
-    static public String kickMessage;
-    static public String cancelMessage;
+    static public String countdownMessageMinutes = "The server is restarting in %minutes% minutes";
+    static public String countdownMessageSeconds = "The server is restarting in %seconds% seconds";
 
-    static public int maxCooldownMinutes;
+    static public String bossBarTitle = "Reboot";
+
+    static public String rebootCancelMessage = "Server reboot has been canceled";
+    static public String rebootConsoleMessage = "An automated reboot has been scheduled in %minutes% minutes";
+    static public String rebootDefaultMessage = "scheduled restart";
+
+    static public String rebootKickMessage = "The server is restarting";
+
+    static public int defaultCountdownSeconds = 10;
+    static public int maxCountdownMinutes = 15;
 
     static public void readConfig(JavaPlugin plugin) {
-
         plugin.saveDefaultConfig();
-        
+
         FileConfiguration config = plugin.getConfig();
 
-        rebootMinuteMessage = config.getString("reboot-minute-message");
-        rebootSecondMessage = config.getString("reboot-second-message");
+        rebootMessageMinutes = Config.getColoredString(config, "reboot-message-minutes");
+        rebootMessageSeconds = Config.getColoredString(config, "reboot-message-seconds");
 
-        defaultRebootMessage = config.getString("reboot-default-message");
-        rebootConsoleMessage = config.getString("reboot-console-message");
+        countdownMessageMinutes = Config.getColoredString(config, "countdown-message-minutes");
+        countdownMessageSeconds = Config.getColoredString(config, "countdown-message-seconds");
 
-        countdownMinute = config.getString("countdown-minute-message");
-        countdownSecond = config.getString("countdown-second-message");
+        bossBarTitle = Config.getColoredString(config, "boss-bar-title");
 
-        kickMessage = config.getString("reboot-kick-message");
-        cancelMessage = config.getString("reboot-cancel-message");
+        rebootCancelMessage = Config.getColoredString(config, "reboot-cancel-message");
+        rebootConsoleMessage = Config.getColoredString(config, "reboot-console-message");
+        rebootDefaultMessage = Config.getColoredString(config, "reboot-default-message");
 
-        maxCooldownMinutes = config.getInt("maxCooldown-minutes");
-        
-        System.out.println(maxCooldownMinutes);
+        rebootKickMessage = Config.getColoredString(config, "reboot-kick-message");
+
+        defaultCountdownSeconds = config.getInt("default-countdown-seconds");
+        maxCountdownMinutes = config.getInt("max-countdown-minutes");
+    }
+
+    public static String getColoredString(FileConfiguration config, String configNode) {
+        return ChatColor.translateAlternateColorCodes('&', config.getString(configNode));
     }
 }
