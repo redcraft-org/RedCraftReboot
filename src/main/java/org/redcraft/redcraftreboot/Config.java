@@ -8,8 +8,8 @@ public class Config {
     static public String rebootMessageMinutes = "%sender% asked for a reboot in %minutes% minutes for the following reason: %reason%";
     static public String rebootMessageSeconds = "%sender% asked for a reboot in %seconds% seconds for the following reason: %reason%";
 
-    static public String countdownMessageMinutes = "The server is restarting in %minutes% minutes";
-    static public String countdownMessageSeconds = "The server is restarting in %seconds% seconds";
+    static public String countdownMessageMinutes = "The server is restarting in %minutes% minute(s)";
+    static public String countdownMessageSeconds = "The server is restarting in %seconds% second(s)";
 
     static public String bossBarTitle = "Reboot";
 

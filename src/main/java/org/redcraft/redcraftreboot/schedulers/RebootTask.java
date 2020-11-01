@@ -34,6 +34,10 @@ public class RebootTask implements Runnable {
 
     @Override
     public void run() {
+        for (Player player : Bukkit.getOnlinePlayers()) {
+            bossBar.addPlayer(player);
+        }
+
         if (this.remainingSeconds > 0) {
             bossBar.setProgress((double) this.remainingSeconds / (double) this.totalSeconds);
 

@@ -8,8 +8,8 @@
 reboot-message-minutes: "%sender% &casked for a reboot in %minutes% minutes for the following reason: &a%reason%"
 reboot-message-seconds: "%sender% &casked for a reboot in %seconds% seconds for the following reason: &a%reason%"
 
-countdown-message-minutes: "&cThe server is restarting in &6%minutes% minutes"
-countdown-message-seconds: "&cThe server is restarting in &6%seconds% seconds"
+countdown-message-minutes: "&cThe server is restarting in &6%minutes% minute(s)"
+countdown-message-seconds: "&cThe server is restarting in &6%seconds% second(s)"
 
 boss-bar-title: "&cReboot"
 
