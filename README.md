@@ -1,22 +1,18 @@
 # RedCraftReboot
 
-This plugin has been built to warn players about reboots.
+This plugin has been built to warn players about reboots, and make a countdown.
 
 ## How it works
 
 - One command, `/reboot <minutes> <reason>`
 - If minutes set to 0, start the countdown from 10 sec
-- Max minutes should be 15
-- Broadcast who asked for a reboot and why when ran except if console without args
-- Args not needed for console, default to 15 min and "Scheduled daily reboot"
-- Warn in the tchat 15 min, 10 min, 5 min, 4 min, 3 min, 2 min before reboot
-- Start a countdown in the bossbar until reboot
+- Max minutes is defaulted to 15
+- Broadcast who asked for a reboot and why
+- Args not needed for console, default to 15 min and "scheduled reboot"
+- Warn in the chat 15 min, 10 min, 5 min, 4 min, 3 min, 2 min before reboot
+- Start a countdown in the boss bar until reboot
 - Do a countdown from 10 to 0 as title and end with "Reboot!"
 - Use fireworks for the 10 last seconds
-
-## How to configure
-
-TODO
 
 ## Permissions
 

@@ -1,24 +1,29 @@
 package org.redcraft.redcraftreboot;
+
 import org.bukkit.plugin.java.JavaPlugin;
+import org.redcraft.redcraftreboot.commands.RebootCommand;
 
 public class RedCraftReboot extends JavaPlugin {
 
-	static public JavaPlugin instance;
+	static public RedCraftReboot instance;
 
-	Reboot reboot;
+	RebootCommand rebootCommand = new RebootCommand();
 
 	@Override
 	public void onEnable() {
 		instance = this;
 		Config.readConfig(this);
 
-		reboot = new Reboot(this);
-		this.getCommand("reboot").setExecutor(reboot);
+		this.getCommand("reboot").setExecutor(rebootCommand);
 	}
 
 	@Override
 	public void onDisable() {
-		
+		this.getServer().getScheduler().cancelTasks(this);
+	}
+
+	static public RedCraftReboot getInstance() {
+		return instance;
 	}
 
 }
