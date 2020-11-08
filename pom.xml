@@ -6,7 +6,7 @@
 
 	<groupId>org.redcraft.redcraftreboot</groupId>
 	<artifactId>RedCraftReboot</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 
 	<repositories>
 		<repository>
@@ -48,7 +48,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.13</version>
+			<version>4.13.1</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
