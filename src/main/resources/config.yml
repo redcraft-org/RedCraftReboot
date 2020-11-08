@@ -1,0 +1,23 @@
+#  ___        _  ___           __ _
+# | _ \___ __| |/ __|_ _ __ _ / _| |_   ___ _ _ __ _
+# |   / -_) _` | (__| '_/ _` |  _|  _|_/ _ \ '_/ _` |
+# |_|_\___\__,_|\___|_| \__,_|_|  \__(_)___/_| \__, |
+#                                              |___/
+#
+
+reboot-message-minutes: "%sender% &casked for a reboot in %minutes% minutes for the following reason: &a%reason%"
+reboot-message-seconds: "%sender% &casked for a reboot in %seconds% seconds for the following reason: &a%reason%"
+
+countdown-message-minutes: "&cThe server is restarting in &6%minutes% minute(s)"
+countdown-message-seconds: "&cThe server is restarting in &6%seconds% second(s)"
+
+boss-bar-title: "&cReboot"
+
+reboot-cancel-message: "&aServer reboot has been canceled"
+reboot-console-message: "&cAn automated reboot has been scheduled in %minutes% minutes"
+reboot-default-message: "scheduled restart"
+
+reboot-kick-message: "&6The server is restarting"
+
+default-countdown-seconds: 10
+max-countdown-minutes: 15

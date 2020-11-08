@@ -1,0 +1,11 @@
+name: RedCraftReboot
+main: org.redcraft.redcraftreboot.RedCraftReboot
+version: 0.0.2-SNAPSHOT
+author: RedCraft
+authors: [Omeganx, lululombard]
+commands:
+  reboot:
+    description: Reboot the server.
+    usage: /reboot <minutes> <reason>
+    permission: redcraftreboot.reboot
+    permission-message: You don't have the permission to restart the server.
